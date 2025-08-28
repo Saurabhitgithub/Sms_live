@@ -1,0 +1,51 @@
+.mainContainer {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    /* position: relative; */
+}
+
+.snackbar {
+    width: auto;
+    max-width: 400px;
+    height: auto;
+    min-height: 50px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    z-index: 99999;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+    font-weight: 500;
+}
+
+
+.content {
+    width: auto;
+    /* white-space: nowrap; */
+    padding: 14px 15px;
+    font-size: 0.875rem;
+}
+
+.closeIcon {
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.green {
+    background: green;
+    color: white;
+}
+
+.red {
+    background: white;
+    color: red;
+}
+
+.yellow {
+    background: gray;
+    color: white;
+}

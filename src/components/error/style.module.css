@@ -1,0 +1,12 @@
+.img_container {
+  background: url("/src/assets/images/jsTree/error403.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-size: contain; */
+  background-position: center;
+  height: 60vh;
+}
+.image_container_child {
+  height: 20%;
+  /* background-color: white; */
+}

@@ -1,0 +1,19 @@
+
+.custom-option {
+ 
+  
+  background-color: #f9f9f9;
+  /* min-width: 160px; */
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px 15px !important;  /* Custom padding to increase item height */
+  margin: 5px 0 !important; /* Custom margin to create gap between items */
+}
+
+.custom-option:hover {
+  background-color: #e9ecef; /* Custom background color on hover */
+  color: #0056b3; /* Custom text color on hover */
+}

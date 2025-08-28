@@ -1,0 +1,216 @@
+.filterbtn {
+  /* background-color: red !important; */
+  position: relative;
+}
+
+.overlay {
+  background-color: #ffffff;
+  width: 200%;
+  /* height: 50px; */
+  padding: 6px 0;
+  z-index: 1;
+  color: #5c687a !important;
+  border: 1px solid #e8e9ef;
+  border-radius: 9px;
+  box-shadow: #e8e9ef;
+  position: absolute;
+  top: 120%;
+  right: 0%;
+  left: 0%;
+}
+
+.labelsHeading {
+  font-family: "DM Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 100 !important;
+  line-height: 16px;
+  letter-spacing: 0.012em;
+  text-align: left;
+  color: #9699a7;
+}
+
+.name_head {
+  font-size: 24px;
+  font-family: "DM Sans", sans-serif;
+  color: #5c687a;
+  line-height: 28px;
+}
+.sec_head {
+  font-size: 16px;
+  color: #5c687a;
+  font-family: "DM Sans", sans-serif;
+}
+
+.th_head {
+  font-family: "DM Sans", sans-serif;
+  color: #9699a7;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.activeBtnn {
+  width: auto;
+  padding: 5px 18px 5px 18px;
+  border: none;
+  color: #50ad97;
+  background-color: #f5fffd;
+  cursor: pointer;
+  border-radius: 8px;
+  justify-content: end;
+  align-items: end;
+}
+.viewActive {
+  width: auto;
+  padding: 5px 18px 5px 18px;
+  border: none;
+  color: #50ad97;
+  background-color: #f5fffd;
+  border-radius: 8px;
+  justify-content: end;
+  align-items: end;
+}
+.min_header {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+.se_header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.header_but {
+  display: flex;
+  justify-content: space-between;
+  gap: 450px;
+  font-weight: 400px !important;
+}
+
+.top_hed {
+  font-size: 24px;
+  font-family: "DM Sans", sans-serif;
+  color: #000000;
+  font-weight: 400 !important;
+  line-height: 28px;
+}
+
+.h5_de {
+  color: #262729;
+  size: 18px;
+  line-height: 24px;
+}
+
+.input_txt {
+  color: #262729;
+
+  font-size: 16px;
+
+  font-family: "DM Sans", sans-serif;
+  line-height: 24px;
+}
+.labelss {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500 !important;
+  line-height: 18px;
+  /* letter-spacing: 0.012em; */
+  text-align: left;
+  color: #000000;
+  display: inline-block;
+  /* max-width: 400px; Adjust width to fit 100 characters approximately */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.boxxBackground {
+  width: auto;
+  height: 40px;
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px !important;
+  background-color: #f6f6f6;
+  align-items: center;
+  display: flex;
+  position: relative;
+  margin-top: 7px;
+}
+#boxxBackgroundID:hover .labelss::after {
+  content: attr(data-full-email); /* Show the full email */
+  position: absolute;
+  left: 0;
+  top: 100%; /* Position below the div */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+  white-space: nowrap;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+#boxxBackgroundAdd {
+  position: relative;
+  /* display: inline-block; Ensure it's inline to the span */
+}
+
+#boxxBackgroundAdd:hover .labelss::after {
+  content: attr(data-full-address); /* Show the full address */
+  position: absolute;
+  left: 0;
+  top: 100%; /* Position below the div */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+  white-space: nowrap;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 5px; /* Add some space between the span and tooltip */
+}
+
+.pagination_item {
+  justify-content: end;
+  display: flex;
+  margin-top: 6px;
+}
+.inputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.inputWithText {
+  width: 100%;
+  padding-right: 100px;
+}
+
+.actionText {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.addText {
+  right: 65px;
+  color: var(--primary-color);
+}
+
+.deleteText {
+  right: 10px;
+  color: red;
+}
+
+@media (max-width: 576px) {
+  .overlay {
+    position: absolute;
+    margin-top: 10px;
+    width: 250%;
+  }
+}

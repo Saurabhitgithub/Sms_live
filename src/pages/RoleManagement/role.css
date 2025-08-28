@@ -1,0 +1,15 @@
+.rbacManagement_container {
+    max-width: 1000px;
+    /* margin: auto; */
+    
+    
+        .parentModule_heading {
+            font-size: 18px;
+            width: 400px;
+            font-weight: 600 !important;
+        }
+        .childModule_heading{
+            width: 400px;
+        }
+    
+    }

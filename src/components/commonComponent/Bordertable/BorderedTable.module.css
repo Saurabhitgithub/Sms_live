@@ -1,0 +1,19 @@
+/* .borderedTable_main_con {
+    & tbody,
+    td,
+    tfoot,
+    th,
+    tr {
+        border: 1px solid #ECEEF2 !important;
+
+    }
+
+    & td,
+    th {
+        background-color: white;
+        font-size: 16px;
+        font-weight: 400;
+        color: #353638;
+    
+    }
+} */

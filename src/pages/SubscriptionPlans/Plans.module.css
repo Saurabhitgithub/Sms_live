@@ -1,0 +1,208 @@
+.rowexpend {
+  width: 85% !important;
+  /* background-color: red; */
+  /* font-weight: 500 !important; */
+}
+
+.borderlayer {
+  border: none !important;
+  /* background-color: red; */
+  /* height: 25rem !important; */
+}
+
+.checkedRow {
+  background: #f5f6fa;
+}
+
+.box_sizeing {
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+}
+
+.main_grid_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 65% 32%;
+  gap: 3%;
+}
+.main_grid_container3 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 4%;
+}
+.main_grid_container2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 65% 32%;
+  gap: 3%;
+}
+.main_grid_container4 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  /* gap: 4%; */
+}
+.formSwitch {
+  display: flex;
+  align-items: center;
+  color: #0e1073;
+  accent-color: #0e1073;
+}
+
+.formCheckInput {
+  width: 40px;
+  height: 20px;
+  position: relative;
+  appearance: none;
+  background: #ddd;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+.formCheckInput:checked {
+  background: #0e1073;
+}
+
+.formCheckInput::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  top: 1px;
+  left: 1px;
+  transition: transform 0.3s;
+}
+
+.formCheckInput:checked::before {
+  transform: translateX(20px);
+}
+.inputContainer {
+  position: relative;
+  width: 100%;
+}
+
+.inputWithText {
+  padding-right: 100px;
+}
+
+.actionText {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  padding: 0 10px;
+}
+
+.addText {
+  right: 60px;
+}
+
+.deleteText {
+  right: 0;
+  color: red;
+}
+
+.featureInput > div {
+  margin-top: 20px;
+}
+
+.featureInput > div:nth-child(1) {
+  margin-top: 0px !important;
+}
+.horizontal {
+  width: 100%;
+  padding: 1px 14px;
+}
+.modalHeader {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modalBody {
+  padding: 2rem;
+}
+
+.fileLabel {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.fileInput {
+  border-width: 2px;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin-top: 1.5rem;
+}
+
+.primaryButton {
+  background-color: #0e1073;
+  border-color: #0e1073;
+  margin-right: 0.5rem;
+  color: white;
+}
+
+.secondaryButton {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: white;
+}
+
+.cancelButton {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: white;
+}
+
+.tablehover:hover {
+  background-color: #c43737 !important;
+}
+
+.header_but {
+  display: flex;
+  justify-content: space-between;
+  gap: 450px;
+  font-weight: 400px !important;
+}
+
+.headin_size {
+  color: #202224;
+  size: 16px;
+  font-weight: 600 !important;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* .modalheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+} */
+
+@media screen and (max-width: 450px) {
+  .main_grid_container2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 10px;
+  }
+}

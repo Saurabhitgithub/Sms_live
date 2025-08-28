@@ -1,0 +1,22 @@
+.labels {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500 !important;
+  /* line-height: 10px; */
+  letter-spacing: 0.012em;
+
+  color: #262729;
+}
+.show_less {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #262729;
+  }
+
+@media (max-width: 576px) {
+  .labels {
+    font-size: 14px;
+  }
+}

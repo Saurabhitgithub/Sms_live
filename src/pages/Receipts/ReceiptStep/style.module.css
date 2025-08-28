@@ -1,0 +1,63 @@
+.Grid_Style_template {
+  display: grid;
+  grid-template-columns: 48% 2% 48%;
+}
+.child_container {
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+}
+
+
+@media (max-width: 991px) {
+  .child_container {
+    font-size:small;
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+
+.verticle_line {
+  display: block;
+  grid-template-columns: 100%;
+  border-left: 1px solid gray;
+}
+.para_headings {
+  font-size: 18px;
+  color: #262729;
+  font-weight: 500;
+}
+.receipt_btn {
+  background: #f6f6f6;
+  color: var(--primary-color);
+  /* border: 1px solid var(--primary-color); */
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px 12px 20px;
+  gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .d-flex-md {
+    display: flex !important;
+  }
+  .flex-column-md {
+    flex-direction: column !important;
+  }
+  .justify-content-between-md {
+    justify-content: between !important;
+  }
+  .align-items-center-md {
+    align-items: center !important;
+  }
+  .align-items-md-start {
+    align-items: start;
+  }
+  .form_group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
